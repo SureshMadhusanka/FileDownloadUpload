@@ -1,0 +1,25 @@
+{
+  "name": "filedownloadupload",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "Regression_Chromium": "npx playwright test --headed --reporter=allure-playwright",
+    "Smoke_Chromium": "npx playwright test --headed --grep \"@Smoke\" --reporter=allure-playwright",
+    "Smoke_All_Browsers": "npx playwright test --headed --grep \"@Smoke\" --config=playwright.config1.js --reporter=allure-playwright",
+    "Allure_Generate": "allure generate ./allure-results -o ./allure-report",
+    "Allure_Open": "allure open ./allure-report",
+    "Clean_Allure": "rimraf allure-results allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.6",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "allure-playwright": "^3.10.2",
+    "rimraf": "^6.1.3"
+  }
+}

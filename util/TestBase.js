@@ -1,0 +1,41 @@
+const { test } = require('@playwright/test');
+
+exports.testBase = test.extend({
+  webTablesPageTestData: {
+    salary_column_number: 4,
+    last_name_column_number: 1,
+    age_column_number: 2,
+    email_column_number: 3,
+    department_column_number: 5,
+    expected_number_of_rows: 4,
+    persons: [
+      {
+        name: "Alden",
+        last_name: "Cantrell",
+        age: 45,
+        email: "alden@example.com",
+        salary: 12000,
+        department: "Compliance"
+      },
+      {
+        name: "Kierra",
+        last_name: "Gentry",
+        age: 29,
+        email: "kierra@example.com",
+        salary: 2000,
+        department: "Legal"
+      },
+      {
+        name: "Cierra",
+        last_name: "Vega",
+        age: 39,
+        email: "cierra@example.com",
+        salary: 10000,
+        department: "Insurance"
+      }
+    ]
+  },
+  uploadDownloadPageTestData: {
+    file_path: "downloads/demoqa-file.png"
+  }
+});

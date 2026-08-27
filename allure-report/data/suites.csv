@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7868","@Smoke Validate Clicking Edit Button","chromium","Fri Aug 07 09:07:27 IST 2026","passed","Fri Aug 07 09:07:35 IST 2026","","table-navigation.spec.js","",""
+"","11696","@Smoke Validate Clicking Edit Button","firefox","Fri Aug 07 09:07:37 IST 2026","passed","Fri Aug 07 09:07:49 IST 2026","","table-navigation.spec.js","",""
+"","7391","@Smoke Validate Clicking Edit Button","webkit","Fri Aug 07 09:07:52 IST 2026","passed","Fri Aug 07 09:07:59 IST 2026","","table-navigation.spec.js","",""

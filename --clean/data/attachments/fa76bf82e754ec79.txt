@@ -1,0 +1,2 @@
+File stored at: D:\Automation Projects\FileDownloadUpload\test-results\.playwright-artifacts-0\f181f83f-f1c4-4896-972f-8bb967f6d0c6
+File path at: downloads/demoqa-file.png
