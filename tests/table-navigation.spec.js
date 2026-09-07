@@ -3,7 +3,7 @@ const { WebTablesPage } = require('../page-objects/WebTablesPage');
 const webTablesPageTestData = require('../util/WebTablesPageTestData.json');
 
 let webTablesPage;
-
+// Feature : Web Tables
 test.beforeEach(async ({ page }) => {
     webTablesPage = new WebTablesPage(page);
     await webTablesPage.navigateToWebTables();
@@ -25,7 +25,8 @@ test(`@Regression Validate Salary of Kierra`, async ({ page }) => {
 });
 
 for (const person of webTablesPageTestData.persons) {
-    test(`@Regression Validate ${person.name}`, async ({ page }) => {
+    test(`
+        @Regression Validate ${person.name}`, async ({ page }) => {
         await expect(webTablesPage.tableRowWithText(person.name)).toBeVisible();
         await expect(webTablesPage.getColumnForRow(person.name, webTablesPageTestData.salary_column_number)).toHaveText(person.salary.toString());
         await expect(webTablesPage.getColumnForRow(person.name, webTablesPageTestData.last_name_column_number)).toHaveText(person.last_name);
