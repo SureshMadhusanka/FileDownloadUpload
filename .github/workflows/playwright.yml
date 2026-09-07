@@ -1,3 +1,4 @@
+# Github Actions workflow for running Playwright tests on push and pull request events to main or master branches.
 name: Playwright Tests
 on:
   push:
