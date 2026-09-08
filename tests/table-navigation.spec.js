@@ -3,7 +3,7 @@ const { WebTablesPage } = require('../page-objects/WebTablesPage');
 const webTablesPageTestData = require('../util/WebTablesPageTestData.json');
 
 let webTablesPage;
-// Feature : Web Tables
+
 test.beforeEach(async ({ page }) => {
     webTablesPage = new WebTablesPage(page);
     await webTablesPage.navigateToWebTables();
