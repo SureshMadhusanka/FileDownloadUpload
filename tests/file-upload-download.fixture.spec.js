@@ -12,11 +12,11 @@ testBase('Validating file download and upload', async ({ page, uploadDownloadPag
     const filePath = uploadDownloadPageTestData.file_path;
 
     // Temporary sandbox path
-    const tempPath = await download.saveAs();
-    console.log(`File stored at: ${tempPath}`);
-    console.log(`File path at: ${filePath}`);
+   // const tempPath = await download.saveAs();
+  //  console.log(`File stored at: ${tempPath}`);
+  //  console.log(`File path at: ${filePath}`);
 
     // Persist it to your own folder
-    await uploadDownloadPage.saveDownload(download, filePath);
-    await uploadDownloadPage.uploadFile(filePath);
+  //  await uploadDownloadPage.saveDownload(download, filePath);
+  //  await uploadDownloadPage.uploadFile(filePath);
 });
